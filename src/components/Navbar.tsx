@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             {[
-              { name: 'About', id: 'about' },
+              { name: 'About', id: 'hero' },
               { name: 'Skills', id: 'skills' },
               { name: 'Experience', id: 'experience' },
               { name: 'Projects', id: 'projects' },
