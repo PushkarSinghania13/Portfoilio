@@ -96,7 +96,7 @@ const Hero = () => {
           <div className="relative">
             <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-strong">
               <img 
-                src="/placeholder.svg" 
+                src="/lovable-uploads/05db408a-1d85-4166-9ce1-3d08f23c8e88.png" 
                 alt="Pushkar Singhania"
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
               />
