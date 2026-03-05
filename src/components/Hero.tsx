@@ -82,9 +82,8 @@ const Hero = () => {
               Get In Touch
             </Button>
             <Button 
-              variant="outline"
               size="lg"
-              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-medium px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
+              className="bg-accent/20 border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-medium px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
             >
               View Resume
             </Button>
