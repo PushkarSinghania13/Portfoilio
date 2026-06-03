@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import resumeAsset from '@/assets/Pushkar_Singhania_Resume.pdf.asset.json';
+
 
 const Hero = () => {
   const [currentPhrase, setCurrentPhrase] = useState(0);
