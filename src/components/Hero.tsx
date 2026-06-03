@@ -40,7 +40,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen bg-gradient-primary flex items-center justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-screen pt-20 lg:pt-24 bg-gradient-primary flex items-center justify-center relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
