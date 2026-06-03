@@ -2,34 +2,44 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Skills = () => {
   const skillCategories = [
-    {
-      title: "Programming Languages",
-      skills: [
-        { name: "Java", level: 85 },
-        { name: "Python", level: 75 },
-        { name: "JavaScript", level: 80 },
-        { name: "C++", level: 70 }
-      ]
-    },
-    {
-      title: "Web Development",
-      skills: [
-        { name: "React", level: 80 },
-        { name: "HTML/CSS", level: 90 },
-        { name: "Node.js", level: 65 },
-        { name: "Tailwind CSS", level: 85 }
-      ]
-    },
-    {
-      title: "Tools & Technologies",
-      skills: [
-        { name: "Git/GitHub", level: 80 },
-        { name: "MySQL", level: 70 },
-        { name: "VS Code", level: 90 },
-        { name: "Linux", level: 65 }
-      ]
-    }
-  ];
+{
+title: "Programming Languages",
+skills: [
+{ name: "Java", level: 90 },
+{ name: "Python", level: 85 },
+{ name: "C", level: 80 },
+{ name: "JavaScript", level: 80 }
+]
+},
+{
+title: "Web Development",
+skills: [
+{ name: "React", level: 85 },
+{ name: "Node.js", level: 75 },
+{ name: "Express.js", level: 75 },
+{ name: "Tailwind CSS", level: 85 }
+]
+},
+{
+title: "Databases & Tools",
+skills: [
+{ name: "MySQL", level: 80 },
+{ name: "Git/GitHub", level: 85 },
+{ name: "VS Code", level: 95 },
+{ name: "Vite", level: 80 }
+]
+},
+{
+title: "Core CS",
+skills: [
+{ name: "Data Structures", level: 85 },
+{ name: "Algorithms", level: 80 },
+{ name: "OOP", level: 85 },
+{ name: "REST APIs", level: 75 }
+]
+}
+];
+
 
   return (
     <section id="skills" className="py-20 bg-background">
@@ -43,7 +53,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
             <Card 
               key={category.title} 
