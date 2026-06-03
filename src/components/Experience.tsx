@@ -3,38 +3,47 @@ import { Card, CardContent } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
-      title: "Student",
-      company: "VIT Chennai",
-      period: "2022 - Present",
-      description: "B.Tech in Electrical and Computer Science Engineering. Focusing on data structures, algorithms, web development, and competitive programming.",
+      title: "B.Tech in Electrical and Computer Science Engineering",
+      company: "Vellore Institute of Technology, Chennai",
+      period: "2024 - 2028",
+      description: "Pursuing my undergraduate degree with a strong focus on programming, data structures, algorithms, and full-stack development.",
       achievements: [
-        "Maintained high academic performance",
-        "Active participant in coding competitions",
-        "Member of technical clubs and societies"
+        "CGPA: 9.20 / 10",
+        "Strong foundation in Java, Python, DSA, OOP, and SQL",
+        "Building full-stack web apps, REST APIs, and ML solutions"
       ],
       type: "education"
     },
     {
-      title: "Competitive Programmer",
-      company: "Self-Learning",
-      period: "2021 - Present",
-      description: "Actively solving algorithmic problems on various platforms to improve problem-solving skills and programming proficiency.",
+      title: "Higher Secondary Education (Class XII)",
+      company: "GD Birla Centre for Education, Kolkata",
+      period: "2024",
+      description: "Completed Class XII with a focus on science and mathematics, building the foundation for engineering studies.",
       achievements: [
-        "Solved 500+ problems across platforms",
-        "Participated in multiple coding contests",
-        "Strong foundation in DSA concepts"
+        "Scored 92% in Class XII board examinations",
+        "School Prefect — selected for leadership and communication skills"
       ],
-      type: "development"
+      type: "education"
     },
     {
-      title: "Web Development Journey",
-      company: "Self-Learning",
-      period: "2023 - Present",
-      description: "Learning and building web applications using modern technologies like React, JavaScript, and various frameworks.",
+      title: "Secondary Education (Class X)",
+      company: "Sacred Heart School",
+      period: "2022",
+      description: "Completed Class X with strong academic performance across all subjects.",
       achievements: [
-        "Built multiple personal projects",
-        "Learning full-stack development",
-        "Exploring modern web technologies"
+        "Scored 88% in Class X board examinations"
+      ],
+      type: "education"
+    },
+    {
+      title: "Media and Creative Head",
+      company: "IE(I) Student Chapter, VIT Chennai",
+      period: "2024 - Present",
+      description: "Leading media initiatives and creative direction for the student chapter, coordinating teams to produce engaging digital content for technical events.",
+      achievements: [
+        "Led media for 5+ technical workshops and events",
+        "Coordinated cross-functional teams to deliver digital content",
+        "Managed promotional campaigns to improve student engagement"
       ],
       type: "development"
     }
@@ -48,7 +57,7 @@ const Experience = () => {
             Experience & <span className="text-primary">Education</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            My journey in technology, learning, and skill development
+            My academic journey and leadership experience
           </p>
         </div>
 
@@ -58,7 +67,7 @@ const Experience = () => {
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div 
+              <div
                 key={index}
                 className={`flex flex-col lg:flex-row items-center gap-8 animate-fade-in-up ${
                   index % 2 === 0 ? 'lg:flex-row-reverse' : ''
@@ -101,11 +110,11 @@ const Experience = () => {
 
                         <div className="pt-2">
                           <span className={`inline-flex px-3 py-1 rounded-full text-xs font-medium ${
-                            exp.type === 'education' 
-                              ? 'bg-blue-100 text-blue-800' 
+                            exp.type === 'education'
+                              ? 'bg-blue-100 text-blue-800'
                               : 'bg-green-100 text-green-800'
                           }`}>
-                            {exp.type === 'education' ? 'Education' : 'Development'}
+                            {exp.type === 'education' ? 'Education' : 'Experience'}
                           </span>
                         </div>
                       </div>
