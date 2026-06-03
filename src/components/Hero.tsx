@@ -83,12 +83,16 @@ const Hero = () => {
             >
               Get In Touch
             </Button>
-            <Button 
+            <Button
+              asChild
               size="lg"
               className="bg-accent/20 border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-medium px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
             >
-              View Resume
+              <a href={resumeAsset.url} target="_blank" rel="noopener noreferrer">
+                View Resume
+              </a>
             </Button>
+
           </div>
         </div>
 
