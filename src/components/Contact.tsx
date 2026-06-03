@@ -35,6 +35,7 @@ const Contact = () => {
       link: "https://github.com/PushkarSinghania13"
     }
   ];
+  ];
 
   const socialLinks = [
     {
