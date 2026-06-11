@@ -8,7 +8,7 @@ Welcome to the source code of my personal portfolio! This is where I showcase wh
 
 ## ✨ Live Demo
 
-🔗 [pushkarsinghania.vercel.app]
+🔗 pushkarsinghania.vercel.app
 
 ---
 
