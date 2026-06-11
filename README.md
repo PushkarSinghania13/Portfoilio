@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+# 🚀 Pushkar Singhania — Portfolio
 
-## Project info
+> *"Building things that live on the internet."*
 
-**URL**: https://lovable.dev/projects/92ca7f7b-8bd9-48a2-859b-750c68ac2ec4
+Welcome to the source code of my personal portfolio! This is where I showcase who I am, what I've built, and what I'm capable of. Feel free to look around. 👀
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Live Demo
 
-**Use Lovable**
+🔗 [pushkarsinghania.vercel.app]
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/92ca7f7b-8bd9-48a2-859b-750c68ac2ec4) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎨 What's Inside
 
-**Use your preferred IDE**
+| Section | What you'll find |
+|---|---|
+| 🙋 **Hero / About** | Who I am, what I do, and why you should care |
+| 🛠️ **Skills** | The tools and technologies I wield |
+| 💼 **Experience** | Where I've been and what I've done |
+| 🚧 **Projects** | Things I've built that I'm proud of |
+| 📬 **Contact** | Ways to reach me — yes, the form actually works |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧰 Built With
 
-Follow these steps:
+- ⚛️ **React** — UI framework
+- 🎨 **Tailwind CSS** — Styling
+- 🧩 **shadcn/ui** — Component library
+- ⚡ **Vite** — Blazing fast build tool
+- 📧 **EmailJS** — Contact form magic (no backend needed)
+- 💙 **TypeScript** — Because types are friends, not foes
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📬 Contact
 
-# Step 3: Install the necessary dependencies.
-npm i
+Got a project idea? Want to collaborate? Or just want to say hi?
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- 📧 pushkar.singhania3093@gmail.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/pushkar-singhania-)
+- 🐙 [GitHub](https://github.com/PushkarSinghania13)
+- 📸 [Instagram](https://www.instagram.com/pushkarsinghania_)
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📄 License
 
-**Use GitHub Codespaces**
+This project is open source and available under the [MIT License](LICENSE).
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/92ca7f7b-8bd9-48a2-859b-750c68ac2ec4) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<p align="center">Designed & Built by <strong>Pushkar Singhania</strong> 💙</p>
+<p align="center">If you liked it, drop a ⭐ — it means a lot!</p>
