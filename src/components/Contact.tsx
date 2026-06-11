@@ -220,7 +220,7 @@ const Contact = () => {
 
         {/* Footer - now outside the grid so it spans full width and is centered */}
         <div className="text-center text-primary-foreground/60 text-sm mt-12">
-          <p>2024 Pushkar Singhania. Built with React and Tailwind CSS.</p>
+          <p>©2026 Pushkar Singhania.</p>
         </div>
 
       </div>
