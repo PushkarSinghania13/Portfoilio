@@ -2,7 +2,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import resumeAsset from '@/assets/Pushkar_Singhania_Resume.pdf.asset.json';
+
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -208,9 +208,13 @@ const Contact = () => {
                   size="lg"
                   className="w-full bg-transparent border-accent text-accent hover:bg-accent hover:text-accent-foreground font-medium px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
                 >
-                  <a href={resumeAsset.url} target="_blank" rel="noopener noreferrer">
-                    Download Resume
-                  </a>
+                  <a
+                    href="/Pushkar_Singhania_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+>
+                     Download Resume
+                    </a>
                 </Button>
               </CardContent>
             </Card>
