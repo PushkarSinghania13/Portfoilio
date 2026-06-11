@@ -202,20 +202,7 @@ const Contact = () => {
                   {sending ? 'Sending...' : 'Send Message'}
                 </Button>
 
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="w-full bg-transparent border-accent text-accent hover:bg-accent hover:text-accent-foreground font-medium px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105"
-                >
-                  <a
-                    href="/Pushkar_Singhania_Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
->
-                     Download Resume
-                    </a>
-                </Button>
+                
               </CardContent>
             </Card>
           </div>
