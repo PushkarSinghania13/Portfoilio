@@ -67,7 +67,7 @@ const Hero = () => {
           <div className="h-12 flex items-center justify-center lg:justify-start">
             <span className="text-lg sm:text-xl lg:text-2xl text-primary-foreground/90 font-medium">
               {currentText}
-              <span className="ml-1 w-0.5 h-6 bg-accent inline-block animate-blink"></span>
+              <span className="ml-1 w-0.5 h-6 bg-accent inline-block animate-pulse-soft"></span>
             </span>
           </div>
 
