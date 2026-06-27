@@ -2,6 +2,8 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import Reveal from '@/components/Reveal';
+
 
 
 const Contact = () => {
@@ -96,40 +98,40 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-primary">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="contact" className="py-20 bg-gradient-primary relative overflow-hidden">
+      <div className="absolute -top-32 -right-32 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+        <Reveal className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
             {"Let's "}<span className="text-accent">Connect</span>
           </h2>
-          <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-primary-foreground/80 max-w-3xl mx-auto">
             {"I'm always interested in hearing about new opportunities and collaborations"}
           </p>
-        </div>
+        </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="space-y-6">
-              {contactInfo.map((info, index) => (
+          <Reveal direction="left" className="space-y-8">
+            <div className="space-y-4">
+              {contactInfo.map((info) => (
                 <Card
                   key={info.title}
-                  className="bg-card/10 backdrop-blur-sm border-accent/20 hover:bg-card/20 transition-all duration-300 animate-fade-in-up"
-                  style={{ animationDelay: `${index * 0.2}s` }}
+                  className="bg-card/10 backdrop-blur-sm border-accent/20 hover:bg-card/20 hover:-translate-y-1 transition-all duration-300"
                 >
                   <CardContent className="p-4">
                     <a
                       href={info.link}
                       className="flex items-center gap-4 text-primary-foreground hover:text-accent transition-colors group"
                     >
-                      <div className="text-accent group-hover:scale-110 transition-transform">
+                      <div className="text-accent group-hover:scale-110 group-hover:rotate-6 transition-transform">
                         {info.icon}
                       </div>
-                      <div>
+                      <div className="min-w-0">
                         <h3 className="font-medium">{info.title}</h3>
-                        <p className="text-primary-foreground/80">{info.value}</p>
+                        <p className="text-primary-foreground/80 text-sm sm:text-base break-all">{info.value}</p>
                       </div>
                     </a>
                   </CardContent>
@@ -137,7 +139,6 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Social Links */}
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-primary-foreground">Follow Me</h3>
               <div className="flex gap-4">
@@ -147,6 +148,7 @@ const Contact = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={social.name}
                     className="p-3 bg-accent/10 backdrop-blur-sm border border-accent/20 rounded-lg text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow"
                   >
                     {social.icon}
@@ -154,17 +156,17 @@ const Contact = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </Reveal>
 
           {/* CTA Section */}
-          <div className="space-y-8">
-            <Card className="bg-card/10 backdrop-blur-sm border-accent/20 animate-fade-in-up">
-              <CardContent className="p-8 space-y-6">
-                <div className="text-center space-y-4">
-                  <h3 className="text-2xl font-bold text-primary-foreground">
+          <Reveal direction="right" className="space-y-8">
+            <Card className="bg-card/10 backdrop-blur-sm border-accent/20">
+              <CardContent className="p-6 sm:p-8 space-y-5">
+                <div className="text-center space-y-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-primary-foreground">
                     Ready to collaborate?
                   </h3>
-                  <p className="text-primary-foreground/80 leading-relaxed">
+                  <p className="text-primary-foreground/80 leading-relaxed text-sm sm:text-base">
                     {"Whether you have a project in mind, want to discuss opportunities, or just want to say hello, I'd love to hear from you!"}
                   </p>
                 </div>
@@ -174,7 +176,7 @@ const Contact = () => {
                   placeholder="Your Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/50"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent transition"
                 />
 
                 <input
@@ -182,7 +184,7 @@ const Contact = () => {
                   placeholder="Your Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/50"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent transition"
                 />
 
                 <textarea
@@ -190,30 +192,25 @@ const Contact = () => {
                   placeholder="Your Message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/50 resize-none"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/50 resize-none focus:outline-none focus:ring-2 focus:ring-accent transition"
                 />
 
                 <Button
                   onClick={sendEmail}
                   disabled={sending}
                   size="lg"
-                  className="w-full bg-accent text-accent-foreground hover:bg-accent-warm font-medium px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-medium"
+                  className="w-full bg-accent text-accent-foreground hover:bg-accent-warm font-medium px-8 py-3 rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-medium"
                 >
                   {sending ? 'Sending...' : 'Send Message'}
                 </Button>
-
-                
               </CardContent>
             </Card>
-          </div>
-
+          </Reveal>
         </div>
 
-        {/* Footer - now outside the grid so it spans full width and is centered */}
         <div className="text-center text-primary-foreground/60 text-sm mt-12">
           <p>©2026 Pushkar Singhania.</p>
         </div>
-
       </div>
     </section>
   );
